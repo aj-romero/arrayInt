@@ -62,28 +62,28 @@ public class App {
   }
 
   private static void actions() {
-    int action = 0;
-    action = checkInput();
+    int action = checkInput();
     if (action >= 0 && action <= 2) {
       switch (action) {
-        case 0:
+        case 0 -> {
           printf("%n See you later!");
           System.exit(0);
-          break;
-        case 1:
+        }
+        case 1 -> {
           buildIntArray();
           builResult();
           printInstructions();
           actions();
-          break;
-        case 2:
+        }
+        case 2 -> {
           builResult();
           printInstructions();
           actions();
-          break;
-        default:
+        }
+        default -> {
           printInstructions();
           actions();
+        }
       }
     } else {
       printInstructions();
