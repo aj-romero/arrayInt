@@ -4,9 +4,9 @@ public class StoreOperation {
 
   private int min;
   private int max;
-  private float avg;
+  private double avg;
 
-  public StoreOperation(int min, int max, float avg) {
+  public StoreOperation(int min, int max, double avg) {
     this.min = min;
     this.max = max;
     this.avg = avg;

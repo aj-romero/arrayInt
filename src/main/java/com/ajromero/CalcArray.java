@@ -4,13 +4,13 @@ import com.ajromero.Interfaces.ICalcArray;
 
 public class CalcArray implements ICalcArray {
   @Override
-  public float arrayAverage(int[] arr) {
+  public double arrayAverage(int[] arr) {
     if (arr != null && arr.length > 0) {
       int avg = 0;
       for (int x = 0; x < arr.length; x++) {
         avg += arr[x];
       }
-      return (float) avg / arr.length;
+      return (Double.valueOf(avg) / Double.valueOf(arr.length));
     } else return 0;
   }
 
