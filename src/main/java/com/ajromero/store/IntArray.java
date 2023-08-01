@@ -1,7 +1,7 @@
 package com.ajromero.store;
 
 public class IntArray{
-  private int[] inputArray;
+  private final int[] inputArray;
 
   public IntArray(int[] inputArray) {
 

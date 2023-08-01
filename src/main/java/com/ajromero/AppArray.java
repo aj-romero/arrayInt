@@ -5,14 +5,13 @@ import com.ajromero.store.IntArray;
 import com.ajromero.store.ValueCalc;
 
 public class AppArray {
-  private ICalcArray calcArray;
-  private IntArray intArray;
+  private final IntArray intArray;
 
   public AppArray(int[] arr, ICalcArray iCalcArray) {
-    this.calcArray = iCalcArray;
+
     intArray =
         new ValueCalc(
-            arr, calcArray.arrayMin(arr), calcArray.arrayMax(arr), calcArray.arrayAverage(arr));
+            arr, iCalcArray.arrayMin(arr), iCalcArray.arrayMax(arr), iCalcArray.arrayAverage(arr));
   }
 
   public String getOperationValues(){

@@ -2,9 +2,9 @@ package com.ajromero.store;
 
 public class ValueCalc extends IntArray {
 
-  private int min;
-  private int max;
-  private double avg;
+  private final int min;
+  private final int max;
+  private final double avg;
 
   public ValueCalc(int[] arr, int min, int max, double avg) {
     super(arr);
