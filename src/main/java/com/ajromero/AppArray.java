@@ -2,6 +2,7 @@ package com.ajromero;
 
 import com.ajromero.Interfaces.ICalcArray;
 import com.ajromero.store.IntArray;
+import com.ajromero.store.ValueCalc;
 
 public class AppArray {
   private ICalcArray calcArray;
@@ -10,12 +11,12 @@ public class AppArray {
   public AppArray(int[] arr, ICalcArray iCalcArray) {
     this.calcArray = iCalcArray;
     intArray =
-        new IntArray(
+        new ValueCalc(
             arr, calcArray.arrayMin(arr), calcArray.arrayMax(arr), calcArray.arrayAverage(arr));
   }
 
-  public IntArray getIntArray() {
-    return intArray;
+  public String getOperationValues(){
+    return this.intArray.getValues();
   }
 
   public String inputArray() {

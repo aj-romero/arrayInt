@@ -15,7 +15,7 @@ public class App {
 
   private static void builResult() {
     printf("Input: \t" + appArray.inputArray());
-    printf("\nOuput: \n" + appArray.getIntArray().getOperationValue());
+    printf("\nOuput: \n" + appArray.getOperationValues());
   }
 
   private static void buildIntArray() {
