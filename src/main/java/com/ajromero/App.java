@@ -42,7 +42,6 @@ public class App {
         acc = Integer.parseInt(es.nextLine());
         b = false;
       } catch (Exception e) {
-        b = true;
         printf("Gring, Please type again a correct integer");
       }
     }
